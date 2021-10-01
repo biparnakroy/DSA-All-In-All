@@ -15,27 +15,20 @@ int main(){
     for(int i = 0; i < m; i++){
         cin >> arr2[i];
     }
-    int i = 0, j = 0, k = 0;
-    while(i < n && j < m){
-        if(arr1[i] < arr2[j]){
-            arr1[k++] = arr1[i++];
+    int i=n-1,j=0;
+    while(i>=0 && j<m)
+    {
+        if(arr1[i]>arr2[j])
+        {
+            swap(arr1[i],arr2[j]);
+            i--;j++;
         }
-        else{
-            arr1[k++] = arr2[j++];
-        }
+        else break;
     }
-    while(i < n){
-        arr1[k++] = arr1[i++];
-    }
-    while(j < m){
-        arr1[k++] = arr2[j++];
-    }
-    for(int i = 0; i < n; i++){
-        cout << arr1[i] << " ";
-    }
-    for(int i = 0; i < m; i++){
-        cout << arr2[i] << " ";
-    }
+    sort(arr1,arr1+n);
+    sort(arr2,arr2+m);
+    for(int i=0;i<n;i++) cout<<arr1[i]<<" ";
+    for(int i=0;i<m;i++) cout<<arr2[i]<<" ";
     cout<<endl;
     return 0;
 }
