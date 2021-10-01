@@ -1,2 +1,7 @@
 !*.cpp
 !Makefile
+!*.java
+!.md
+!*.c
+!*.py
+!*.ipynb
