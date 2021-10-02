@@ -7,3 +7,6 @@ all: $(EXECS)
 
 clean:
 	rm $(EXECS)
+
+move:
+	mv $(EXECS) build/
