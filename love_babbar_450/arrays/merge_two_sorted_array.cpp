@@ -1,4 +1,5 @@
 // https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays5135/1
+// solution: https://www.youtube.com/watch?v=H7ADLLVrxis
 
 #include <bits/stdc++.h>
 using namespace std;
