@@ -1,4 +1,21 @@
-//https://leetcode.com/problems/merge-intervals/
+/*https://leetcode.com/problems/merge-intervals/
+
+1. Sort the intervals by start time.
+2. Iterate through the intervals:
+    a. If current interval does not overlap with previous interval, add it to the merged list.
+    b. If current interval overlaps with previous interval, merge it with the previous interval.
+3. Return the merged list.
+
+overlap check:
+    if (interval1.end >= interval2.start)
+    {
+        return true
+    }
+    else
+    {
+        return false
+    }
+*/
 
 
 #include <bits/stdc++.h>
@@ -28,6 +45,6 @@ int main(){
     for(int i=0;i<ans.size();i++){
         cout<<ans[i].first<<" "<<ans[i].second<<endl;
     }
-    
+
     return 0;
 }
