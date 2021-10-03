@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.vdh": "vhdl",
+        "iostream": "cpp"
+    }
+}

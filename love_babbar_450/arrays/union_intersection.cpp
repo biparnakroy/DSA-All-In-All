@@ -35,7 +35,12 @@ void print_intersection(int a[],int b[],int n,int m){
     int i=0;
     int j=0;
     while(i<n && j<m){
-        if(a[i]<b[j])
+         // handling duplicate elements (can be omitted)
+        if(i>0 && a[i]==a[i-1]){
+            i++;
+            continue;
+        }
+        else if(a[i]<b[j])
            i++;
         else if(a[i]>b[j])
            j++;
