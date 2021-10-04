@@ -1,7 +1,7 @@
-// https://practice.geeksforgeeks.org/problems/maximum-product-subarray3604/1
+/*https://practice.geeksforgeeks.org/problems/maximum-product-subarray3604/1
 
-/*
-    Slight modification of kadane's algo
+
+    Slight modification of kadanes algo
     -->keep track of max_subarray_prod_so_far and also min_subarray_prod_so_far
     --> if the current element is negetive swap (max_so_far, min_so_far) basic rule of inequality
     --> res = max(res, max_so_far)
