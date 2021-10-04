@@ -1,11 +1,11 @@
-// https://practice.geeksforgeeks.org/problems/subarray-with-0-sum/0
-// solution : https://www.youtube.com/watch?v=_yGf2rxwZlA&t=756s (this one checks for max length)
-/*
-    variants:
-    1. Max length subarray with sum 0
-    2. count subarray with sum 0
-    3. find subarray with sum 0
-    4. find all subarray with sum 0
+/* https://practice.geeksforgeeks.org/problems/subarray-with-0-sum/0
+ solution : https://www.youtube.com/watch?v=_yGf2rxwZlA&t=756s (this one check)
+
+    variants
+    --> Max length subarray with sum 0
+    --> count subarray with sum 0
+    --> find subarray with sum 0
+    --> find all subarray with sum 0
 */
 
 #include <bits/stdc++.h>
