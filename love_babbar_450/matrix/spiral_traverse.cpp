@@ -17,7 +17,7 @@ int main(){
     }
     int i, k = 0, l = 0;
  
-    /* k - starting row index
+    /*  k - starting row index
         m - ending row index
         l - starting column index
         n - ending column index
@@ -25,37 +25,31 @@ int main(){
     */
  
     while (k < m && l < n) {
-        /* Print the first row from
-               the remaining rows */
+        /* Print the first row from the remaining rows */
         for (i = l; i < n; ++i) {
             cout << a[k][i] << " ";
         }
         k++;
  
-        /* Print the last column
-         from the remaining columns */
+        /* Print the last column from the remaining columns */
         for (i = k; i < m; ++i) {
             cout << a[i][n - 1] << " ";
         }
         n--;
  
-        /* Print the last row from
-                the remaining rows */
-        if (k < m) {
-            for (i = n - 1; i >= l; --i) {
-                cout << a[m - 1][i] << " ";
-            }
-            m--;
+        /* Print the last row from the remaining rows */
+        for (i = n - 1; i >= l,k<m; --i) {
+            cout << a[m - 1][i] << " ";
         }
+        m--;
+    
  
-        /* Print the first column from
-                   the remaining columns */
-        if (l < n) {
-            for (i = m - 1; i >= k; --i) {
-                cout << a[i][l] << " ";
-            }
-            l++;
+        /* Print the first column from the remaining columns */
+        for (i = m - 1; i >= k,l<n; --i) {
+            cout << a[i][l] << " ";
         }
+        l++;
+
     }
     return 0;
 }
