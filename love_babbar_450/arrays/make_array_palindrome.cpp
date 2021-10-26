@@ -1,6 +1,7 @@
 /*
 https://www.geeksforgeeks.org/find-minimum-number-of-merge-operations-to-make-an-array-palindrome/
 Technique : Sliding Window
+Solution : https://www.youtube.com/watch?v=ls3EKAm8Vok
 */
 
 #include <bits/stdc++.h>

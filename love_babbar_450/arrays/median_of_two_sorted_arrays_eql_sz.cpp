@@ -1,8 +1,15 @@
-//https://www.geeksforgeeks.org/find-minimum-number-of-merge-operations-to-make-an-array-palindrome/
-// Basically merge the two arrays 
+//https://www.geeksforgeeks.org/median-of-two-sorted-arrays/
+// solution : https://www.youtube.com/watch?v=FyJmnhqATko
+// Approach 1 : Basically merge the two arrays 
+// Approach 2 : Divide and conquer log n
 
 #include <bits/stdc++.h>
 using namespace std;
+
+//dive and conquer
+void median(int a[],int n){
+    
+}
 
 int main(){
     int n;
@@ -12,21 +19,36 @@ int main(){
     int b[n];
     for(int i=0;i<n;i++) cin>>b[i];
 
-    int i=n-1,j=0;
-    while(i>=0 && j<n){
-        if(a[i]>b[j]){
-            swap(a[i],b[j]);
-            i--;j++;
+    int m1= -1, m2 =-1;
+    int i=0,j=0;
+    int count = 0;
+    
+    while(count <=n){
+        if(i==n){
+            m1=m2;
+            m2=b[0];
+            break;
         }
-        else break;
+        else if(j==n){
+            m1=m2;
+            m2=a[0];
+            break;
+        }
+        if(a[i]<=b[i]){
+            m1=m2;
+            m2=a[i];
+            i++;
+            count++;
+        }
+        else{
+            m1=m2;
+            m2=b[j];
+            j++;
+            count++;
+        }
     }
-    sort(a,a+n);
-    sort(b,b+n);
-    // for(int i=0;i<n;i++) cout<<a[i]<<" ";
-    // cout<<endl;
-    // for(int i=0;i<n;i++) cout<<b[i]<<" ";
-
-    int median=(a[n-1]+b[0])/2;
+    int median = (m1+m2)/2;
+    cout<<m1<<" "<<m2<<endl;
     cout<<median<<endl;
     return 0;
 }

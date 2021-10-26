@@ -2,6 +2,7 @@
 https://practice.geeksforgeeks.org/problems/minimum-swaps-required-to-bring-all-elements-less-than-or-equal-to-k-together4847/1
 
 Technique : sliding window (fixed size)
+solution : https://www.youtube.com/watch?v=PLu6uvp9l1k
 */
 
 #include <bits/stdc++.h>
