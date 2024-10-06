@@ -1,6 +1,6 @@
 class Solution {
-    int dp[101];
 private:
+    int dp[101];
     int help(vector<int>& nums, int idx){
         if(idx == 0) return nums[0];
         if(idx < 0) return 0;
